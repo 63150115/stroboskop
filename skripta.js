@@ -1,6 +1,7 @@
 window.addEventListener('load', function() {
 	//stran nalozena
 	
+	
 	//Dodaj novo barvo
 	var dodajBarvo = function(event) {
 		var input = document.createElement('button');
@@ -13,6 +14,13 @@ window.addEventListener('load', function() {
 		.addEventListener('click', dodajBarvo);
 		
 	//Odstrani barve
+	var odstraniBarve = function(event) {
+		document.getElementById("barve").innerHTML = ""; 
+	}
+	//kličemo funkcijo za odstranitev barv ob kliku 
+	document.querySelector("#odstraniBarve").addEventListener('click', odstraniBarve);
+	
+	
 	
 	//Stroboskop
 	var vrednosti = [];
